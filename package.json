@@ -1,12 +1,17 @@
 {
   "name": "chris-cybersec-dev",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "git": "git@github.com:chrisdesign69/chris-cybersec-dev.git",
+  "Author": "Chris Rasoa",
+  "keywords": ["chris-cybersec.dev", "Full-Stack Web Development", "Web Design", "Responsive Design"],
+  "Project started on": "04.12.2022",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 1304",
+    "start": "next start --port 1304",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "info": "next info"
   },
   "dependencies": {
     "@types/node": "18.11.10",

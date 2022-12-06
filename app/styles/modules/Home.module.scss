@@ -1,0 +1,23 @@
+@use '_Mixins.module.scss' as *;
+@use '_Variables.module.scss' as *;
+
+.HeaderContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  .logo {
+    letter-spacing: 1px;
+    @include gridCenter;
+}
+.nav {
+    @include flexRow;
+    justify-content: space-around;
+    align-items: center;
+    .navItems{
+        outline: 2px solid white;
+        padding-inline: 1rem;
+        padding-block: .5rem;
+        border-radius: 2px;
+    }
+  }
+}

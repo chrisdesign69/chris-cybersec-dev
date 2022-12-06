@@ -1,0 +1,9 @@
+sass --watch app/styles/modules:app/styles/min --style=compressed --no-source-map
+
+BASE_URL_Prod=https://chris-cybersec.xyz
+BASE_URL_Dev=http://localhost:1701
+
+#MongoDB
+MONGODB_URI=mongodb://localhost:27017
+MONGODB_DB=testchrisdb
+TODOS_COLLECTION=Todos

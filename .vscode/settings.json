@@ -1,9 +1,5 @@
 {
-  "cSpell.words": [
-    "chrisdesign",
-    "cybersec",
-    "Rasoa"
-  ],
+  "cSpell.words": ["chrisdesign", "cybersec", "mascable", "Rasoa"],
   "typescript.tsdk": "node_modules\\.pnpm\\typescript@4.9.3\\node_modules\\typescript\\lib",
   "typescript.enablePromptUseWorkspaceTsdk": true
 }

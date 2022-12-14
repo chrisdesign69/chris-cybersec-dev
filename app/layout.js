@@ -14,7 +14,6 @@ import styles from "/app/styles/min/Root.module.css";
 export default function RootLayout({ children }) {
   return (
     <html className={barlow.className}>
-      <head />
       <body className={styles.container}>
         <header> <Suspense fallback={"Loading Header"}><Header /></Suspense></header>
         <main>{children}</main>

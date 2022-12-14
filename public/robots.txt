@@ -1,0 +1,7 @@
+# Robots.txt for chris-cybersec.dev
+
+User-agent: *
+Disallow: /components
+Disallow: /styles
+
+Sitemap: https://chris-cybersec.dev/sitemap.xml

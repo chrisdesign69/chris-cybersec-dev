@@ -7,7 +7,7 @@ Dockerfile
 /Dockerfile
 
 # PWA
-/public/sw.js
+/public/sw*
 /public/workbox-*
 /public/sw.js.map
 

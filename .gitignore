@@ -6,6 +6,10 @@ Dockerfile.dev
 Dockerfile
 /Dockerfile
 
+# PWA
+/public/sw.js
+/public/workbox-*
+/public/sw.js.map
 
 
 

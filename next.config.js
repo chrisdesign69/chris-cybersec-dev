@@ -8,15 +8,43 @@ const withPWA = require('@ducanh2912/next-pwa').default({
 },
 )
 
-// edit this config 
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  experimental:{appDir: true}
-}
+// Security Headers
+const securityHeaders = [
+  //Strict-Transport-Security
+  {
+    key: 'Strict-Transport-Security',
+    value: 'max-age=63072000; includeSubDomains; preload'
+},
+//X-XSS-Protection
+{
+  key: 'X-XSS-Protection',
+  value: '1; mode=block'
+},
+//advanced-Protection-by
+{
+  key: 'Advanced-Protection-by',
+  value: 'Chris'
+},
+//X-Content-Type-Options
+{
+  key: 'X-Content-Type-Options',
+  value: 'nosniff'
+},
+]
 
 module.exports = withPWA({
   reactStrictMode: true,
   swcMinify: true,
-  experimental:{appDir: true}
+  experimental:{appDir: true},
+  // Disable Powered By
+  poweredByHeader: false,
+
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: securityHeaders
+      }
+    ]
+  }
 })

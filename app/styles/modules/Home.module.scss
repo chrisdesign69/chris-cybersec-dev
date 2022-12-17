@@ -1,6 +1,7 @@
 @use '_Mixins.module.scss' as *;
 @use '_Variables.module.scss' as *;
 
+//===========================================Header
 .HeaderContainer {
   height: 100%;
   display: grid;
@@ -20,4 +21,9 @@
         border-radius: 2px;
     }
   }
+}
+
+//===========================================Main
+.mainContainer{
+  @include borderRed;
 }

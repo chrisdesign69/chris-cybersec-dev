@@ -29,10 +29,12 @@
     @include LineBreaker;
   }
   main {
-    height: 80vh;
+  //  @include borderRed;
+   height: 60vh;
   }
+
   footer {
-    height: 10rem;
+  //  height: 10rem;
     @include Footer;
   }
 }

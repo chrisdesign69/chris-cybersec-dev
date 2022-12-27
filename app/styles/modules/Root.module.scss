@@ -35,9 +35,19 @@ grid-template-rows: 10rem 75vh;
   // }
 
   footer {
-
-
-  
     @include Footer;
+    .footerTop{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      .left{
+        @include gridCenter;
+    }
+      // .right{
+      //   @include borderBlue;
+      // }
+    }
+    .Date{
+      text-align: center;
+    }
   }
 }

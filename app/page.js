@@ -22,9 +22,9 @@ const Main = () => {
           <p>Welcome to my World of</p>
           <Suspense fallback={"Loading"}><TypeWriterPage /></Suspense>
         </div>
-        {/* <Suspense fallback={"Loading"}>
+        <Suspense fallback={"Loading"}>
           <LightHouse />
-        </Suspense> */}
+        </Suspense>
       </div>
     </>
   );

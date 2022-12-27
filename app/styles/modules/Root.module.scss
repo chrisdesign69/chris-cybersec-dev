@@ -13,7 +13,8 @@
       color: $LinkHover;
     }
   }
-
+display: grid;
+grid-template-rows: 10rem 75vh;
   width: min(80vw, 75rem);
   min-width: 20rem;
   margin: 0 auto;
@@ -28,13 +29,15 @@
     height: 10rem;
     @include LineBreaker;
   }
-  main {
-  //  @include borderRed;
-   height: 60vh;
-  }
+  // main {
+
+  //  height: 60vh;
+  // }
 
   footer {
-  //  height: 10rem;
+
+
+  
     @include Footer;
   }
 }

@@ -30,13 +30,30 @@
   }
 }
 
-//===========================================Main
+//===========================================Lighthouse
 .lightHouseContainer {
-  width: 100%;
+  @include gridCenter;
+  background-color: white;
+  color: black;
+  padding-block-end: 1rem;
   .lightHouseImage{
-    width: 100%;
-    height: 20rem;
-    border: 1px solid white;
-    background-color: #944f00;
+    @include gridCenter;
+    border: 1px solid black;
+    border-radius: 5px;
+    @include lightouseBoxShadow;
+  }
+  span{
+    margin-block-start: 1rem;
+    a{
+      color: rgb(0, 119, 255);
+      @include lightHouseTransition;
+      font-size: .9rem;
+      &:hover{
+        color: rgb(180, 0, 30);
+      }
+      &:visited{
+        color: rgb(97, 0, 16);
+      }
+    }
   }
 }

@@ -5,31 +5,6 @@
 .HeaderContainer {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  .logo {
-    letter-spacing: 1px;
-    @include gridCenter;
-  }
-  .nav {
-    @include flexRow;
-    justify-content: space-around;
-    align-items: center;
-    .navItems {
-      outline: 2px solid white;
-      padding-inline: 1rem;
-      padding-block: 0.5rem;
-      border-radius: 2px;
-      background-color: #fb8500;
-      transition: all 0.3s ease-in;
-      &:hover {
-        background-color: #944f00;
-      }
-      a {
-        font-weight: 600;
-        color: currentColor;
-      }
-    }
-  }
 }
 
 //===========================================Main
@@ -39,6 +14,7 @@
     h2{
       span{
         font-weight: 800;
+        color: $ft-clr1;
       }
     }
     h1{

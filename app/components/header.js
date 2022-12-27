@@ -12,7 +12,6 @@ const Header = () => {
     return (
         <div className={styles.HeaderContainer}>
             <div className={styles.logo}><Link href={'/'}> <Suspense fallback={"Loading Logo"}><LogoComponent /></Suspense></Link></div>
-             <Suspense fallback={"Loading Nav"}><Nav /></Suspense>
         </div>
     )
 }

@@ -17,6 +17,10 @@
   flex-direction: row;
 }
 
+@mixin borderNone {
+  outline: 1px solid transparent;
+}
+
 @mixin borderRed {
   outline: 1px solid red;
 }

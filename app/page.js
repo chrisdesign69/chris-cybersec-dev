@@ -3,8 +3,8 @@ import React from "react";
 import { Suspense } from "react";
 
 //Fonts
-import { Barlow } from "@next/font/google";
-const barlow = Barlow({ weight: "400", subsets: ['latin'] });
+import { Raleway } from "@next/font/google";
+const raleway = Raleway({ weight: "400", subsets: ['latin'] });
 
 //Styles
 import styles from "/app/styles/min/Home.module.css";
@@ -18,7 +18,7 @@ const Main = () => {
     <>
       <div className={styles.mainContainer}>
         <div className={styles.headerContent}>
-          <h2>Hey I&apos;m <span className={barlow.className}>Chris</span>,</h2>
+          <h2>Hey I&apos;m <span className={raleway.className}>Chris</span>,</h2>
           <p>Welcome to my World of</p>
           <Suspense fallback={"Loading"}><TypeWriterPage /></Suspense>
         </div>

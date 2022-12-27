@@ -1,0 +1,9 @@
+@use '_Mixins.module.scss' as *;
+@use '_Variables.module.scss' as *;
+
+.Container{
+    @include flexRow;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}

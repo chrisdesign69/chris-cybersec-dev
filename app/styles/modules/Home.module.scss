@@ -9,6 +9,7 @@
 
 //===========================================Main
 .mainContainer {
+  margin-block: 4rem;
   .headerContent {
     text-align: center;
     h2{
@@ -34,8 +35,9 @@
 .lightHouseContainer {
   @include gridCenter;
   background-color: white;
-  color: black;
+  color: rgb(14, 11, 11);
   padding-block-end: 1rem;
+  margin-block: 4rem;
   .lightHouseImage{
     @include gridCenter;
     border: 1px solid black;

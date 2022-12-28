@@ -1,0 +1,69 @@
+@use '_Mixins.module.scss' as *;
+@use '_Variables.module.scss' as *;
+
+.form{
+float: right;
+padding-inline-end: .5rem;
+    input{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $ft-clr1;
+        color: white;
+        letter-spacing: 1px;
+        z-index: 1;
+        &:valid {
+            background-color: black;
+        }
+        
+        &:focus + label{
+ 
+            translate: -.2rem -.8rem;
+
+        }
+        &:hover + label{
+            translate: -.2rem -.8rem;
+        }
+        
+        
+        
+    }
+    
+}
+
+
+//Label Styling
+.input{
+    position: relative;
+
+    label{
+        position: absolute;
+        top: .1rem;
+        left: .2rem;
+        font-size: .8rem;
+        color: rgba(255, 255, 255, .4);
+    }
+    
+}
+
+.formInputContainer{
+    @include flexColumn;
+    gap: 1rem;
+
+}
+.submit{
+
+        position: relative;
+        .item{
+            position: absolute;
+            background-color: $ft-clr1;
+            translate: 0 -.5rem;
+            padding-inline: .4rem;
+            padding-block: .1rem;
+            border-radius: 5px;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: .7rem;
+        }
+    }

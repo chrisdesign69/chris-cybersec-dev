@@ -38,13 +38,19 @@ grid-template-rows: 10rem 75vh;
     @include Footer;
     .footerTop{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding-block-end: .5rem;
       .left{
         @include gridCenter;
     }
-      // .right{
-      //   @include borderBlue;
-      // }
+      .right{
+        background-color: black;
+        padding-inline-start: 1rem;
+        padding-block-end: 1rem;
+        color: white;
+        border-radius: 5px;
+
+      }
     }
     .Date{
       text-align: center;

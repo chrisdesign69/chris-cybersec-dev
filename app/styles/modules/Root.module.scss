@@ -14,7 +14,7 @@
     }
   }
 display: grid;
-grid-template-rows: 10rem 75vh;
+grid-template-rows: 10rem 1fr 12rem;
   width: min(80vw, 75rem);
   min-width: 20rem;
   margin: 0 auto;
@@ -28,11 +28,12 @@ grid-template-rows: 10rem 75vh;
   header {
     height: 10rem;
     @include LineBreaker;
-  }
-  // main {
 
-  //  height: 60vh;
-  // }
+  }
+//   main {
+// @include borderRed;
+
+//   }
 
   footer {
     @include Footer;

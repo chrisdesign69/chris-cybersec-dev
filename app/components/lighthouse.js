@@ -14,7 +14,7 @@ const LightHouse = () => {
   return (
     <>
       <div className={styles.lightHouseContainer}>
-        <h3>Lighthouse score</h3>
+        <h1>Lighthouse score</h1>
         <div className={styles.lightHouseImage}>
           <CldImage
             width="320"

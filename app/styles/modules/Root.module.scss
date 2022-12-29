@@ -14,7 +14,7 @@
     }
   }
 display: grid;
-grid-template-rows: 10rem 1fr 12rem;
+grid-template-rows: 10rem 1fr 14rem;
   width: min(80vw, 75rem);
   min-width: 20rem;
   margin: 0 auto;
@@ -50,7 +50,7 @@ grid-template-rows: 10rem 1fr 12rem;
         padding-block-end: 1rem;
         color: white;
         border-radius: 5px;
-
+        height: 11rem;
       }
     }
     .Date{

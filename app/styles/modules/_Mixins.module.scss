@@ -57,3 +57,10 @@
 -o-transition: all 0.3s 0s ease-in;
 transition: all 0.3s 0s ease-in;
 }
+
+//==================================================Form
+@mixin errors {
+  color: red;
+  font-weight: 100;
+  position: absolute;
+}

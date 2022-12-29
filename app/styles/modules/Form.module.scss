@@ -36,6 +36,13 @@ padding-inline-end: .5rem;
 .input{
     position: relative;
 
+    .errorName{
+       @include errors;
+    }
+    .errorEmail{
+       @include errors;
+    }
+
     label{
         position: absolute;
         top: .1rem;
@@ -54,6 +61,7 @@ padding-inline-end: .5rem;
 .submit{
 
         position: relative;
+        translate: 0 2rem;
         .item{
             position: absolute;
             background-color: $ft-clr1;
